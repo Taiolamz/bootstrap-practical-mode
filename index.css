@@ -1,0 +1,25 @@
+.overlay-container {
+  overflow: hidden;
+}
+
+.overlay-container:hover .img-fluid {
+  transform: scale(1.09);
+}
+.max-height-container {
+  max-height: 80vh !important;
+  overflow-y: auto;
+}
+
+.scroll-content {
+  animation: scrollUp 3s forwards;
+}
+
+@keyframes scrollUp {
+  from {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
